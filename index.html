@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+    <title>Relógio Digital</title>
+
+    <script src="https://kit.fontawesome.com/de0a59e52e.js" crossorigin="anonymous"></script>
+
+    <style>
+        
+        body{
+            background-color: black;
+            background-image: url("imagens/Ventania.gif");
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+
+    </style>
+
+    <style>
+
+        section#controls .icon:hover{
+            background-color: rgba(135, 135, 135, 0.099);
+            border-radius: 3rem;
+            height: 24px;
+        }
+
+        section#controls .icon2:hover{
+            background-color: rgba(135, 135, 135, 0.099);
+            border-radius: 3rem;
+            height: 24px;
+        }
+
+        section#controls .icon3:hover{
+            background-color: rgba(135, 135, 135, 0.099);
+            border-radius: 3rem;
+            height: 24px;
+            
+        }
+
+        section#controls .icon4:hover{
+            background-color: rgba(135, 135, 135, 0.099);
+            border-radius: 3rem;
+            height: 19px;
+        }
+        
+        .icon{
+        font-size: 25px;
+        padding: 1rem;
+        color: rgb(212, 212, 212);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        background-color: #54545400;
+        border-radius: 3rem;
+        }
+
+        .icon2{
+        font-size: 25px;
+        padding: 1rem;
+        color: rgb(212, 212, 212);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        background-color: #54545400;
+        border-radius: 3rem;
+        }
+
+        .icon3{
+        font-size: 25px;
+        padding: 1rem;
+        color: rgb(212, 212, 212);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        background-color: #54545400;
+        border-radius: 3rem;
+        }
+
+        .icon4{
+        font-size: 17px;
+        padding: 15px;
+        color: rgb(212, 212, 212);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        background-color: #54545400;
+        border-radius: 3rem;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    
+    <div class="relogio">
+
+        <div>
+                <span id="horas">00</span>
+                <span class="tempo">Horas:</span>
+        </div>
+
+
+        <div>
+                <span id="minutos">00</span>
+                <span class="tempo">Minutos:</span>
+        </div>
+
+
+        <div>
+                <span id="segundos">00</span>
+                <span class="tempo">Segundos</span>
+        </div>
+   </div>
+
+   <script src="assets/js/script.js"></script>
+
+    <section id="controls">
+
+        <i class="fa-solid fa-backward-step icon"></i>
+        <i class="fa-solid fa-play icon2"></i>
+        <i class="fa-solid fa-forward-step icon3"></i>
+
+        <span id="current-duration">00:00</span>
+        <input id="progressbar" type="range" min="0" max="0" step="1">
+        <span id="total-duration">00:00</span>
+
+        <i class="fa-solid fa-volume-high icon4"></i>
+        <input id="volume" type="range" min="0" max="50" step="1">
+
+    </section>
+
+</body>
+
+</html>
