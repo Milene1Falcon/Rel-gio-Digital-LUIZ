@@ -33,7 +33,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #005effca;
+    color: hsl(0, 0%, 89%);
     background: transparent;
     box-shadow: 5px 5px 15px rgb(36, 4, 4);
     border-radius: 7px;
