@@ -20,5 +20,26 @@ const relogio = setInterval(function time() {
 
 })
 
-const currentduration = document.querySelectorAll ('progressbar')
- 
+let musica = document.querySelector('audio');
+
+document.querySelector('icon2').addEventListener('click', tocarMusica);
+document.querySelector('icon1').addEventListener('click', pausarMusica);
+
+musica.addEventListener('timeupdate', atualizarBarra);
+
+function tocarMusica(){
+    musica.play();
+    document.querySelector('icon2').style.display = 'none';
+    document.querySelector('icon1').style.display = 'block';
+}
+
+function pausarMusica(){
+    musica.pause();
+    document.querySelector('icon1').style.display = 'none';
+    document.querySelector('icon2').style.display = 'block';
+}
+
+function atualizarBarra(){
+    let barra = document.querySelector('progressbar');
+    progressbar.style.width = Math.floor((musica.current-duration / total-duration) * 100) + '%';
+}

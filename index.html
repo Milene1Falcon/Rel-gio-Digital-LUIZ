@@ -9,89 +9,16 @@
     <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
     <title>Relógio Digital</title>
 
-    <script src="https://kit.fontawesome.com/de0a59e52e.js" crossorigin="anonymous"></script>
-
     <style>
         
         body{
-            background-color: black;
-            background-image: url("imagens/Céu-do-paraiso-mundano.gif");
+            background-image: url("imagens/Uma\ tarde\ em\ casa.gif");
             background-size: cover;
             width: 100vw;
             height: 100vh;
         }
 
     </style>
-
-    <style>
-
-        section#controls .icon:hover{
-            background-color: rgba(135, 135, 135, 0.099);
-            border-radius: 3rem;
-            height: 24px;
-        }
-
-        section#controls .icon2:hover{
-            background-color: rgba(135, 135, 135, 0.099);
-            border-radius: 3rem;
-            height: 24px;
-        }
-
-        section#controls .icon3:hover{
-            background-color: rgba(135, 135, 135, 0.099);
-            border-radius: 3rem;
-            height: 24px;
-            
-        }
-
-        section#controls .icon4:hover{
-            background-color: rgba(135, 135, 135, 0.099);
-            border-radius: 3rem;
-            height: 19px;
-        }
-        
-        .icon{
-        font-size: 25px;
-        padding: 1rem;
-        color: rgb(212, 212, 212);
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        background-color: #54545400;
-        border-radius: 3rem;
-        }
-
-        .icon2{
-        font-size: 25px;
-        padding: 1rem;
-        color: rgb(212, 212, 212);
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        background-color: #54545400;
-        border-radius: 3rem;
-        }
-
-        .icon3{
-        font-size: 25px;
-        padding: 1rem;
-        color: rgb(212, 212, 212);
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        background-color: #54545400;
-        border-radius: 3rem;
-        }
-
-        .icon4{
-        font-size: 17px;
-        padding: 15px;
-        color: rgb(212, 212, 212);
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        background-color: #54545400;
-        border-radius: 3rem;
-        }
-
-    </style>
-    
 </head>
 
 <body>
@@ -121,6 +48,7 @@
     <section id="controls">
 
         <i class="fa-solid fa-backward-step icon"></i>
+        <i class="fa-solid fa-pause icon1"></i>
         <i class="fa-solid fa-play icon2"></i>
         <i class="fa-solid fa-forward-step icon3"></i>
 
@@ -130,6 +58,8 @@
 
         <i class="fa-solid fa-volume-high icon4"></i>
         <input id="volume" type="range" min="0" max="50" step="1">
+
+        <audio src="musicas/Hollow Coves - The Woods (Official Music Video).mp3"></audio>
 
     </section>
 

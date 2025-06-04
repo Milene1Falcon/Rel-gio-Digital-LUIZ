@@ -9,7 +9,7 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(120deg, #e3d700e3, #e61f00e1);
+    background: linear-gradient(120deg, 1#e3d700e3, 2#e61f00e1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,7 @@ body {
     width: 550px;
     background: transparent;
     border-radius: 5px;
-    box-shadow: 0px 8px 10px rgb(36, 4, 4);
+    box-shadow: 0px 8px 10px rgb(255, 255, 255);
 }
 
 .relogio div {
@@ -35,7 +35,7 @@ body {
     justify-content: center;
     color: hsl(0, 0%, 89%);
     background: transparent;
-    box-shadow: 5px 5px 15px rgb(36, 4, 4);
+    box-shadow: 5px 5px 15px rgb(255, 255, 255);
     border-radius: 7px;
     letter-spacing: 3px;
 }
@@ -48,6 +48,88 @@ body {
 .relogio span.tempo {
     font-size: 10px;
 }
+
+        section#controls .icon:hover{
+            background-color: rgba(135, 135, 135, 0.099);
+            border-radius: 3rem;
+            height: 24px;
+        }
+
+        section#controls .icon1:hover{
+            background-color: rgba(135, 135, 135, 0.099);
+            border-radius: 3rem;
+            height: 24px;
+        }
+
+        section#controls .icon2:hover{
+            background-color: rgba(135, 135, 135, 0.099);
+            border-radius: 3rem;
+            height: 24px;
+        }
+
+        section#controls .icon3:hover{
+            background-color: rgba(135, 135, 135, 0.099);
+            border-radius: 3rem;
+            height: 24px;
+            
+        }
+
+        section#controls .icon4:hover{
+            background-color: rgba(135, 135, 135, 0.099);
+            border-radius: 3rem;
+            height: 19px;
+        }
+        
+        .icon{
+        font-size: 25px;
+        padding: 1rem;
+        color: rgb(212, 212, 212);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        background-color: #54545400;
+        border-radius: 3rem;
+        }
+
+        .icon1{
+        font-size: 25px;
+        padding: 1rem;
+        color: rgb(212, 212, 212);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        background-color: #54545400;
+        border-radius: 3rem;
+        display: none;
+        }
+
+        .icon2{
+        font-size: 25px;
+        padding: 1rem;
+        color: rgb(212, 212, 212);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        background-color: #54545400;
+        border-radius: 3rem;
+        }
+
+        .icon3{
+        font-size: 25px;
+        padding: 1rem;
+        color: rgb(212, 212, 212);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        background-color: #54545400;
+        border-radius: 3rem;
+        }
+
+        .icon4{
+        font-size: 17px;
+        padding: 15px;
+        color: rgb(212, 212, 212);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        background-color: #54545400;
+        border-radius: 3rem;
+        }
 
 #current-duration {
     color: hsl(0, 0%, 89%);
@@ -69,12 +151,12 @@ section#controls{
     justify-content: center;
 }
 
-section#controls input#progressbar {
+#controls #progressbar {
     width: 60%;
     cursor: pointer;
 }
 
-section#controls input#volume{
+#controls #volume{
     width: 0%;
     transition: all 0.3s ease-in-out;
 }
