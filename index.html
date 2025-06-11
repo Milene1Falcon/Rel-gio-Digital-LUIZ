@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
-    <title>Relógio Digital</title>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script defer src="assets/src/clock.js"></script>
+        <script defer src="assets/src/music.js"></script>
+        <title>Relógio Digital</title>
 
     <style>
         
         body{
-            background-image: url("imagens/Uma\ tarde\ em\ casa.gif");
+            background-image: url("assets/imagens/Tempestade.gif");
             background-size: cover;
             width: 100vw;
             height: 100vh;
@@ -27,13 +29,13 @@
 
         <div>
                 <span id="horas">00</span>
-                <span class="tempo">Horas:</span>
+                <span class="tempo">Horas</span>
         </div>
 
 
         <div>
                 <span id="minutos">00</span>
-                <span class="tempo">Minutos:</span>
+                <span class="tempo">Minutos</span>
         </div>
 
 
@@ -43,7 +45,6 @@
         </div>
    </div>
 
-   <script defer src="assets/js/script.js"></script>
 
     <section id="controls">
 
@@ -52,14 +53,14 @@
         <i class="fa-solid fa-pause icon1"></i>
         <i class="fa-solid fa-forward-step icon3"></i>
 
-        <span id="current-duration">00:00</span>
+        <span id="current-time">00:00</span>
         <input id="progressbar" type="range" min="0" max="0" step="1">
         <span id="total-duration">00:00</span>
 
         <i class="fa-solid fa-volume-high icon4"></i>
         <input id="volume" type="range" min="0" max="50" step="1">
 
-        <audio src="audio/Hollow Coves - The Woods (Official Music Video).mp3"></audio>
+        <audio></audio>
 
     </section>
 
